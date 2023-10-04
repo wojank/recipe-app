@@ -1,10 +1,23 @@
 import Hero from './_components/Hero';
+import Latest from './_components/Latest';
 
 export default function Home() {
+	let liczby = [1, 2, 3, 4, 5, 6, 7, 8];
 	return (
 		<>
-			<Hero />
-
+			<main className="flex gap-10 w-full mt-3.5 mx-auto bg-orange-200">
+				<section className="w-1/2" aria-label="recipe-of-the-day">
+					<Hero />
+				</section>
+				<section
+					className="w-1/2 flex flex-wrap gap-5"
+					aria-label="latest-recipes-and-articles"
+				>
+					{liczby.map((liczba) => {
+						return <Latest key={liczba} />;
+					})}
+				</section>
+			</main>
 			<p>
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
 				inventore quaerat mollitia suscipit nesciunt error sint maiores
