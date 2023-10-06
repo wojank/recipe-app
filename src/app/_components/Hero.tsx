@@ -4,7 +4,7 @@ import diyFakeFood2 from '../../../public/diyfakefood2.webp';
 export default function Hero() {
 	return (
 		<>
-			<div className="sticky top-0 relative flex items-center h-screen justify-center bg-pink-500">
+			<div className="sticky top-[90px] flex items-center h-[calc(100vh-90px)] justify-center bg-pink-500">
 				<Image
 					alt="recipe od the day"
 					src={diyFakeFood2}

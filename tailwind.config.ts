@@ -15,7 +15,7 @@ const config: Config = {
 				'101': '1.01',
 			},
 			flex: {
-				'5': '1 0 calc(50% - 2.5rem)',
+				'5': '0 0 calc(50% - 2.5rem)',
 			},
 		},
 	},
